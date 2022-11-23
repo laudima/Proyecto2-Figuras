@@ -19,17 +19,17 @@ def count_peaks(signal):
 
     baseline = sum(signal) / len(signal)
 
-    peak_index, peak_val = None, None
+    peak_val = None
     peaks_count = 0
-    for index,val in enumerate(smoothed_values):
+    for val in smoothed_values:
         if val > baseline:
             if not peak_val or val > peak_val:
-                peak_index,peak_val = index,val
+                peak_val = val
         elif val < baseline and peak_val:
             peaks_count += 1
-            peak_index,peak_val = None,None
+            peak_val = None
 
-    if peak_index:
+    if peak_val:
         peaks_count += 1
 
     return peaks_count

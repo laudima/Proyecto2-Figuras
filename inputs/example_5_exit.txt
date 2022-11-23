@@ -1,6 +1,6 @@
-0D56BB = C
-4574DB = T
-7445DB = T
-5A87E8 = X
-2FE7F1 = C
-9F0DBB = O
+2fe7f1 = C
+4574db = T
+7445db = T
+5a87e8 = X
+0d56bb = C
+9f0dbb = O

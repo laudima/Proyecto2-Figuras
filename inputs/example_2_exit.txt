@@ -1,7 +1,7 @@
-FF3188 = C
-FF3A3A = T
-F1A015 = T
-3446E4 = T
-B534E4 = C
-22A5F1 = C
-5ECD2B = O
+83b22b = O
+ff3a3a = T
+f1a015 = T
+3446e4 = T
+b534e4 = C
+22a5f1 = C
+e634a6 = O

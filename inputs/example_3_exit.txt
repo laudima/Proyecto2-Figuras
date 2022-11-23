@@ -1,3 +1,3 @@
-C736FB = C
-FBF236 = T
-FF4C72 = C
+ff4c72 = C
+fcf434 = T
+c736fb = C

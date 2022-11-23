@@ -1,4 +1,4 @@
-776FBB = C
-A5E85A = C
-5A96E8 = X
-5AE8A5 = O
+776fbb = C
+a5e85a = C
+5a96e8 = X
+5ae8a5 = O

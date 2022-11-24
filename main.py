@@ -1,8 +1,10 @@
 import imageProcessor.imageReader as ir
-import imageProcessor.figuresColors as ff
+import imageProcessor.figuresFinder as ff
+import imageProcessor.noisyPeakFinder as pf
 import imageProcessor.figuresContour as fc
 
 if __name__ == '__main__':
-    x = ir.read_bitmap("example_5.bmp")
+    print("Hello Mundo")
+    x = ir.read_bitmap("example_1.bmp")
     print(ff.get_colors(x))
     print(fc.get_centers(x))

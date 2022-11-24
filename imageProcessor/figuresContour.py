@@ -3,10 +3,6 @@ import cv2
 import math
 import numpy as np
 from cv2 import Mat
-<<<<<<< HEAD
-import imageProcessor.figuresFinder as ff
-import matplotlib.pyplot as plt 
-=======
 import imageProcessor.figuresColors as ff
 import matplotlib.pyplot as plt 
 
@@ -18,7 +14,6 @@ def graph(x,y, color):
 
 def show_graph():
     plt.show()
->>>>>>> main
 
 def get_distances(img : Mat, colors):
 
@@ -35,14 +30,10 @@ def get_distances(img : Mat, colors):
 
         sumX = 0.0
         sumY = 0.0
-<<<<<<< HEAD
-        c = len(contours) - 1
-=======
 
 
         c = len(contours) - 1
 
->>>>>>> main
         for point in contours[c]:
             sumX += point[0][0]
             sumY += point[0][1]
@@ -51,28 +42,10 @@ def get_distances(img : Mat, colors):
         averageY = sumY // len(contours[c])
         distanceContour.append(distance(averageX,averageY,contours[c]))
         centers.append([averageX, averageY])
-        graph(range(len(distanceContour[i])), distanceContour[i], color_set[i])
+        graph(range(len(distanceContour[i])), distanceContour[i], colors[i])
 
-
-<<<<<<< HEAD
-    #print(centers)
-    #print(distanceContour[0])
-    """
-    cv2.imshow("mask", img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    """
 
     return distanceContour
-=======
-    print(color_set)
-    i = 1
-    print(i)
-    print(len(distanceContour))
-    print(distanceContour[i])
-    show_graph()
-    return centers, distanceContour
->>>>>>> main
 
 def distance(centerX,centerY,contours):
     distanceContour = []

@@ -1,13 +1,15 @@
 import sys
 import imageProcessor.imageReader as ir
-import imageProcessor.figuresFinder as ff
 import imageProcessor.noisyPeakFinder as pf
-import imageProcessor.figuresContour as fc
-import imageProcessor.figuresColors
+import imageProcessor.figuresContour as figCon
+import imageProcessor.figuresColors as figCol
 import matplotlib.pyplot as plt
 
 def printColor(color, text):
-    rgb = imageProcessor.figuresColors.hex_to_rgb(color)
+    """
+    Print a given text with the color and with the color hex in front of it.
+    """
+    rgb = figCol.hex_to_rgb(color)
     r = rgb[0]
     g = rgb[1]
     b = rgb[2]
@@ -23,9 +25,9 @@ if __name__ == '__main__':
     
     x = ir.read_bitmap(file)
 
-    colors = list(ff.get_colors(x))
+    colors = list(figCol.get_colors(x))
  
-    distances = fc.get_distances(x,colors)
+    distances = figCon.get_distances(x,colors)
 
     for i,color in enumerate(colors):
         peaks = pf.count_peaks(distances[i])
@@ -38,5 +40,3 @@ if __name__ == '__main__':
         else:
             printColor(color," = X")
    
-else:
-    print("Hello not in main")

@@ -7,15 +7,24 @@ import imageProcessor.figuresColors as ff
 import matplotlib.pyplot as plt 
 
 def graph(x,y, color):
+    """
+    Adds a graphs to the general graphs, it does now show it.
+    """
     plt.plot(x,y,"#" + color)
     plt.xlabel('Contorn')
     plt.ylabel('Distancia')
     plt.title(color)
 
 def show_graph():
+    """
+    Shows the general graph.
+    """
     plt.show()
 
 def get_distances(img : Mat, colors):
+    """
+    Gets all the distances of all the figures of a given matrix given the list of the shape colors.
+    """
 
     centers = []
     distanceContour = []
@@ -48,6 +57,9 @@ def get_distances(img : Mat, colors):
     return distanceContour
 
 def distance(centerX,centerY,contours):
+    """
+    Gets the arrays of all the distances given a center point and a contour to follow.
+    """
     distanceContour = []
     for point in contours:
         d = math.sqrt(abs(point[0][0] - centerX)**2 + abs(point[0][1] - centerY)**2)

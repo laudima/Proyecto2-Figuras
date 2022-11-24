@@ -12,5 +12,5 @@ setuptools.setup(
     url="https://github.com/laudima/Proyecto2-Figuras",
     packages=setuptools.find_packages(),
     python_requires=">=3.7, <4",
-    install_requires=["opencv-python"]
+    install_requires=["opencv-python","scipy"]
 )

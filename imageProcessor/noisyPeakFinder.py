@@ -15,10 +15,5 @@ def count_peaks(signal):
     
     peaks, _ = find_peaks(smoothed_values, height=0)
     mean = sum(smoothed_values) / len(smoothed_values)
-    peaks = [peak for peak in peaks if smoothed_values[peak] >= mean]
-    """
-    plt.plot(smoothed_values)
-    plt.plot(peaks, np.array(smoothed_values)[peaks], "x")
-    plt.show()
-    """
+    peaks = [peak for peak in peaks if smoothed_values[peak] >= (mean * .9)]
     return len(peaks)

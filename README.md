@@ -17,6 +17,10 @@ pip3 install matplotlib
 pip3 install scipy
 ```
 
+***Nota:*** *Si no funciona la instalación con los links anteriores, se puede instalar con la documentación en los links de cada librería.*
+
+* * * 
+
 ## Para ejecutar el programa
 
 1. Clonar el repositorio (clonar el repositorio de la rama main )
@@ -27,8 +31,9 @@ git clone git@github.com:laudima/Proyecto2-Figuras.git
 3. Cambiarse a la carpeta **PROYECTO2-FIGURAS**
 3. Para ejecutar 
 ``` 
-python3 main.py
+python3 main.py ejemplo1.bmp
 ```
+***
 ## Probar el programa con otras imagenes 
 
 1. En la carpeta **PROYECTO2-FIGURAS**
@@ -37,19 +42,18 @@ python3 main.py
 ```
 python3 main.py example.bmp
 ```
+* * * 
 ## Pruebas 
 
 1. En la carpeta **PROYECTO2-FIGURAS**
 2. Ejecutar
 ```
-python3 figureFinderTest.py
+python3 testFigureColor.py
 ```
 ```
-python3 figureTypeTest.py
+python3 testNoisyPeakFinder.py
 ```
-```
-python3 imageProcessTest.py
-```
+* * * 
 ## Documentación 
 
 La documentación del proyecto se encuentra en el siguiente [link](https://docs.google.com/document/d/1-obI9eNgu9Ey6UG9RnocDXc80h8YsAH9AMPi97QZM_U/edit?usp=sharing). También se encuentra en la carpeta **PROYECTO2-FIGURAS** en el archivo **Documentacion.pdf**

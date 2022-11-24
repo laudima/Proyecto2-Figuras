@@ -3,6 +3,15 @@ import numpy as np
 from scipy.signal import find_peaks
 
 def count_peaks(signal):
+    """
+    Function to count peaks on a graph
+
+    Receives an array with the values of a graph and returns the number of peaks of the graph.
+
+    It first smoothes the data by taking the average of adjacent values in the array and over this
+    new array finds peaks via scipy's find_peaks function, finally discards
+    peaks that are not close to the mean because they have a high probability of being false positives..
+    """
     min_index = signal.index(min(signal))
     signal = signal[min_index:] + signal[:min_index]
     smoothed_values = []
